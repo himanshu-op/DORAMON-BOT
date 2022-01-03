@@ -248,8 +248,8 @@ else:
 
 DRAGONS.add(OWNER_ID)
 DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(1809105906)
-DEV_USERS.add(1470075895)
+DEV_USERS.add(5051939910)
+DEV_USERS.add(5038172987)
 
 REDIS = StrictRedis.from_url(REDIS_URL, decode_responses=True)
 
@@ -257,11 +257,11 @@ try:
 
     REDIS.ping()
 
-    LOGGER.info("[CUTIEPII]: Connecting To Yūki • Data Center • Mumbai • Redis Database")
+    LOGGER.info("[DORAMON]: Connecting To Yūki • Data Center • Mumbai • Redis Database")
 
 except BaseException:
 
-    raise Exception("[CUTIEPII ERROR]: Your Yūki • Data Center • Mumbai • Redis Database Is Not Alive, Please Check Again.")
+    raise Exception("[DORAMON ERROR]: Data Center • Mumbai • Redis Database Is Not Alive, Please Check Again.")
 
 finally:
 
@@ -269,7 +269,9 @@ finally:
 
    LOGGER.info("[CUTIEPII]: Connection To The Yūki • Data Center • Mumbai • Redis Database Established Successfully!")
     
+print("DORAMON : A POWERFUL GROUP MANAGEMENT BOT.")
 
+      
 if not SPAMWATCH_API:
     sw = None
     LOGGER.warning("[CUTIEPII ERROR]: SpamWatch API key Is Missing! Recheck Your Config.")
@@ -279,12 +281,6 @@ else:
     except:
         sw = None
         LOGGER.warning("[CUTIEPII ERROR]: Can't connect to SpamWatch!")
-
-
-# Credits Logger
-print("[CUTIEPII] CUTIEPII Is Starting. | Yūki • Black Knights Union Project | Licensed Under GPLv3.")
-print("[CUTIEPII] Cutie Cutie! Successfully Connected With A  Yūki • Data Center • Mumbai")
-print("[CUTIEPII] Project Maintained By: github.com/Awesome-RJ (t.me/Awesome_Rj)")
 
 
 print("[CUTIEPII]: Telegraph Installing")
